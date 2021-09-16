@@ -3,45 +3,585 @@
 <head>
     <meta charset="UTF-8">
     <title>SES</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDarkDropdown">
+
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            НОВИНИ
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            ПУБЛІЧНА ІНФОРМАЦІЯ
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item text-dark" href="#">ІНФОРМАЦІЯ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="#">ПУБЛІЧНІ ЗАКУПІВЛІ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="#">НАУКОВА ДІЯЛЬНІСТЬ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-dark" href="#">ВАКАНСІЇ</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            НОРМАТИВНА БАЗА
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            ПІДРОЗДІЛИ
+                        </a>
                     </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            ПОСЛУГИ
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            КОНТАКТИ
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="im/lab.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="carousel-caption">
+                <img src="im/Logo.svg" alt="" width="450" height="270.37">
+                <p>Підвищення рівня безпеки на всіх<br>
+                    етапах життєдіяльності людини</p>
+                <form class="d-flex justify-content-center">
+                    <input class="form-control rounded-pill search" type="search" placeholder="Знайти..."
+                           aria-label="Search">
+                    <!--<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>-->
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <section class="sectionHeader">
+
+        <div class="container">
+            <div class="row d-flex align-items-center pt-5">
+                <div class="col text-white text-center">
+                    <img src="im/coronavirus.svg" class="pb-3">
+                    <p> Вірусологічна
+                        лабораторія
+                    </p>
+                </div>
+                <div class="col text-white text-center">
+                    <img src="im/bacterium.svg" class="pb-3">
+                    <p>
+                        Бактерологічна
+                        лабораторія
+                    </p>
+                </div>
+                <div class="col text-white text-center">
+                    <img src="im/no-bugs.svg" class="pb-3">
+                    <p>
+                        Паразитологічна
+                        лабораторія
+                    </p>
+                </div>
+                <div class="col-2 text-white text-center">
+                    <img src="im/Vector.svg" class="pb-3">
+                    <p>
+                        Лабораторія
+                        Особливо-небезпечних
+                        інфекцій
+                    </p>
+                </div>
+                <div class="col text-white text-center">
+                    <img src="im/antiseptic.svg" class="pb-3">
+                    <p>
+                        Санітарно-гігієнічна
+                        лабораторія
+                    </p>
+                </div>
+                <div class="col text-white text-center">
+                    <img src="im/atom.svg" class="pb-3">
+                    <p>
+                        Лабораторія
+                        електромагнітних
+                        полів
+                    </p>
+                </div>
+                <div class="col text-white text-center">
+                    <img src="im/radiology.svg" class="pb-3">
+                    <p>
+                        Радіологічна
+                        лабораторія
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </header>
-<section>
+
+<section class="mt-5 mb-5">
+
+
+    <div class="container">
+
+        <h3 class="text-center mb-5">
+            Події
+        </h3>
+
+        <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs1.png" data-original="im/medlabs1.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">12-10-2021</p>
+                                <p>Обережно з колодязною водою.</p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs2.png" data-original="im/medlabs2.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">10-09-2021</p>
+                                <p>25 квітня-Всесвітній день боротьби з малярією.</p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs3.png" data-original="im/medlabs3.png"
+                                         alt=""
+                                         class="img-fluid  event-image">
+                                </div>
+                                <p class="data">06-09-2021</p>
+                                <p>Стан захворюваності населення Рівненської області на паразитози.</p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs4.png" data-original="im/medlabs4.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">01-09-2021</p>
+                                <p class="text-dark">Як позбутися щурів і мишей і яка небезпека чекає на нас якщо з ними
+                                    вчасно не боротися.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--карусель 2-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs1.png" data-original="im/medlabs1.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">12-10-2021</p>
+                                <p>Обережно з колодязною водою.</p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs2.png" data-original="im/medlabs2.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">10-09-2021</p>
+                                <p>25 квітня-Всесвітній день боротьби з малярією.</p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs3.png" data-original="im/medlabs3.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">06-09-2021</p>
+                                <p>Стан захворюваності населення Рівненської області на паразитози.</p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <div class="event-image-wrapper">
+                                    <img src="im/medlabs4.png" data-original="im/medlabs4.png"
+                                         alt=""
+                                         class="img-fluid event-image">
+                                </div>
+                                <p class="data">01-09-2021</p>
+                                <p>Як позбутися щурів і мишей і яка небезпека чекає на нас якщо з ними
+                                    вчасно не боротися.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
 
 </section>
-<footer>
+
+<section class="targets">
+
+
+    <div class="container">
+
+        <h3 class="text-center pt-5">
+            Цілі
+        </h3>
+
+        <div class="row d-flex align-items-center pt-5">
+
+            <div class="col text-center">
+                <img src="im/no-smoking.svg" class="pb-3">
+                <p> Зменшення тютюнопаління
+                </p>
+            </div>
+            <div class="col text-center">
+                <img src="im/heart.svg" class="pb-3">
+                <p>
+                    Зменшити поширеність низької  фізичної активності
+                </p>
+            </div>
+            <div class="col text-center">
+                <img src="im/no-salt.svg" class="pb-3">
+                <p>
+                    Скоротити споживання солі
+                </p>
+            </div>
+            <div class="col text-center">
+                <img src="im/infected.svg" class="pb-3">
+                <p>
+                    Зменшити рівня хвороб  органів дихання
+
+                </p>
+            </div>
+            <div class="col text-center">
+                <img src="im/unite.svg" class="pb-3">
+                <p>
+                    Зниження  кількості осіб, що страждають на ожиріння
+
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+<section class="mb-5">
+    <div class="container">
+        <h3 class="text-center mt-5">
+            Послуги
+        </h3>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Моніторинг за циркуляцією збудників  інфекційних хвороб
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Лабораторія  проводить  моніторинг за циркуляцією збудників  інфекційних хвороб: вірусів сезонного грипу, пандемічного грипу, кору, краснухи, поліомієліту, інших ентеровірусних інфекцій, вірусних гепатитів А, В, С, D та ін. серед населення і в об’єктах довкілля на території області. Визначає напруженість імунітету населення до   вірусів гепатиту В, кору, поліомієліту, грипу.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Дослідження біологічного матеріалу
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Бактеріологічна лабораторія здійснює дослідження біологічного матеріалу (крові, спинно-мозкової рідини, мокротиння, промивних вод бронхів, сечі, виділень з ран, абсцессів та ін., виділень зі статевих органів, виділень з очей, ротової порожнини, ротоглотки та носу, випорожнень, блювотних мас, жовчі та секційного матеріалу) з виділенням та ідентифікацією наступних мікроорганізмів: родів Staphylococcus, Streptococcus,  Meningococcus, Corynebacterium, Bordetella; родин Enterobacteriaceae, Pseudomonadaceae,  Pasteurellaceae; грибів роду Candida та інших збудників бактеріальних інфекцій.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Лабораторний контроль за паразитологічними показниками
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Лабораторний контроль за паразитологічними показниками об’єктів довкілля: санітарно – гельмінтологічні та санітарно – протозойні дослідження садовини, городини, риби, рибопродуктів, м’яса, м’ясопродуктів, води - питної, стічної, водоймищ, плавальних басейнів; грунту, змивів з предметів довкілля, пилу тощо на визначення збудників гельмінтозів, протозоозів та акарозів
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Виявлення  збудників особливо небезпечних інфекцій
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ///
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Заміри фізичних факторів в навколишньому середовищі
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ///
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Дослідження залишкової кількості пестицидів та мікотоксинів в харчових продуктах
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ///
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Дослідження полімерних матеріалів та виробів із них
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ///
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Гамма- та бета-спектрометричні дослідження харчових продуктів та сировини
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ///
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-start-0 border-end-0">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Сумарної альфа-активності та бета-активності води джерел питного водопостачання
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ///
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section>
+    <h3 class="text-center mt-5 mb-5">
+        Інтерактивна карта
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <button type="button" class="button btn text-white" id="waterUtilities">Вода комунальних водопроводів</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Вода відомчих водопроводів</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Вода сільських водопроводів</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Вода колодязів</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Електромагнітне випромінювання</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Радіологічний моніторинг</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Вода поверхневих водойм</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Атмосферне повітря</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Акустичне забруднення</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Грунт</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Епідемічна ситуація</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="button btn text-white">Природні джерела</button>
+            </div>
+        </div>
+
+    </div>
+    <!--google maps-->
+    <div class="card mt-5">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1q-dTue0xj5pYNAzkXbiwPtDVGtQdel3A&hl=uk" width="100%" height="650px"></iframe>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h3 class="text-center mt-5 mb-5">
+        Зв'язатися з нами
+        </h3>
+    </div>
+</section>
+
+<footer class="pt-4 pt-md-5 footer-grey">
+
+    <section class="footer">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0 justify-content-start align-self-center">
+                    <div class="location d-flex flex-column align-items-start">
+                        <img src="im/logo_s.svg" alt="" width="185" height="110">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0 justify-content-start align-self-center">
+                    <div class="location d-flex flex-column align-items-start">
+                        <img src="im/gerb.svg" alt="" width="140" height="170">
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled text-small">
+                        <li class="link-secondary">
+                            Телефон гарячої лінії
+                        </li>
+                        <p>
+                            0 800 507 309
+                        </p>
+                        <li class="link-secondary">
+                            Мобільний телефон
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

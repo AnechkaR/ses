@@ -1,8 +1,118 @@
-body{
+body {
     font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
-/*
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    color: #2C4964;
+}
+
 .navbar {
-    background-color: #092643;
+    background-color: #092643 !important;
 }
-*/
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFF;
+    padding-right: 70px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFD973;
+}
+
+.dropdown-menu-dark {
+    background-color: #FFD973 !important;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #FFFFFF !important;
+}
+
+.dropdown-menu-dark .dropdown-item {
+    padding: 11px 30px;
+}
+
+.carousel-caption p {
+    font-size: 26px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.search {
+    max-width: 482px;
+    min-height: 60px;
+
+}
+
+.sectionHeader {
+    height: 296px;
+    background-color: #3B80C0;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+.data {
+    color: #585858;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.event-image {
+    transition: opacity 300ms;
+}
+
+.event-image:hover {
+    opacity: 50%;
+}
+.event-image-wrapper {
+    background: black;
+}
+.targets {
+    background-color: #DDEEFE;
+    height: 365px;
+}
+
+h2 {
+    color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #2C4964;
+}
+
+.accordion-item {
+    border-top: 1px solid #2C4964;
+    border-bottom: 1px solid #2C4964;
+}
+
+.accordion-button {
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #3B80C0;
+    font-size: 18px;
+}
+
+.button{
+    min-width: 196px;
+    min-height: 68px;
+}
+
+.footer-grey{
+    background-color: #384048;
+}
