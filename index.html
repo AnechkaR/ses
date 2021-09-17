@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>SES</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,161 +25,153 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse text-center" id="navbarNavDarkDropdown">
+                <div class="d-flex justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                НОВИНИ
+                            </a>
+                        </li>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            НОВИНИ
-                        </a>
-                    </li>
-
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            ПУБЛІЧНА ІНФОРМАЦІЯ
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li>
-                                <a class="dropdown-item text-dark" href="#">ІНФОРМАЦІЯ</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-dark" href="#">ПУБЛІЧНІ ЗАКУПІВЛІ</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-dark" href="#">НАУКОВА ДІЯЛЬНІСТЬ</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-dark" href="#">ВАКАНСІЇ</a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            НОРМАТИВНА БАЗА
-                        </a>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                ПУБЛІЧНА ІНФОРМАЦІЯ
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark p-0"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">ІНФОРМАЦІЯ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">ПУБЛІЧНІ ЗАКУПІВЛІ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">НАУКОВА ДІЯЛЬНІСТЬ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">ВАКАНСІЇ</a>
+                                </li>
+                            </ul>
+                        </li>
 
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            ПІДРОЗДІЛИ
-                        </a>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                НОРМАТИВНА БАЗА
+                            </a>
+                        </li>
 
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            ПОСЛУГИ
-                        </a>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                ПІДРОЗДІЛИ
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            КОНТАКТИ
-                        </a>
-                    </li>
 
-                </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                ПОСЛУГИ
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                КОНТАКТИ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="im/lab.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-
+    <div class="bg-image d-flex justify-content-center align-items-center">
         <div class="container">
-            <div class="carousel-caption pb-md-0 pb-lg-4">
-                <img class="Logo" src="im/Logo.svg" alt="" width="450" height="270.37">
-                <p>Підвищення рівня безпеки на всіх<br>
-                    етапах життєдіяльності людини</p>
-                <form class="d-flex justify-content-center">
-                    <input class="form-control rounded-pill search" type="search" placeholder="Знайти..."
-                           aria-label="Search">
-                    <!--<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                    </svg>-->
-                </form>
-
+            <div class="d-flex justify-content-center">
+                <img class="Logo" src="im/Logo.svg" alt="">
             </div>
+            <p class="bg-image-text d-flex justify-content-center">Підвищення рівня безпеки на всіх<br>
+                етапах життєдіяльності людини</p>
+            <form class="d-flex justify-content-center">
+                <input class="form-control rounded-pill search" type="search" placeholder="Знайти..."
+                       aria-label="Search">
+                <!--<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                   <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+               </svg>-->
+            </form>
         </div>
-
     </div>
+
 
     <section class="sectionHeader">
 
         <div class="container">
-            <div class="row d-flex align-items-center pt-5">
-                <div class="col text-white text-center">
+            <div class="row pt-5 pb-5">
+                <a href="#" class="col-lg text-white text-center text-decoration-none">
                     <img src="im/coronavirus.svg" class="pb-3">
                     <p> Вірусологічна
                         лабораторія
                     </p>
-                </div>
-                <div class="col text-white text-center">
+                </a>
+                <a href="#" class="col text-white text-center text-decoration-none">
                     <img src="im/bacterium.svg" class="pb-3">
                     <p>
                         Бактерологічна
                         лабораторія
                     </p>
-                </div>
-                <div class="col text-white text-center">
+                </a>
+                <a href="#" class="col text-white text-center text-decoration-none">
                     <img src="im/no-bugs.svg" class="pb-3">
                     <p>
                         Паразитологічна
                         лабораторія
                     </p>
-                </div>
-                <div class="col-2 text-white text-center">
+                </a>
+                <a href="#" class="col-2 text-white text-center text-decoration-none">
                     <img src="im/Vector.svg" class="pb-3">
                     <p>
                         Лабораторія
                         Особливо-небезпечних
                         інфекцій
                     </p>
-                </div>
-                <div class="col text-white text-center">
+                </a>
+                <a href="#" class="col text-white text-center text-decoration-none">
                     <img src="im/antiseptic.svg" class="pb-3">
                     <p>
                         Санітарно-гігієнічна
                         лабораторія
                     </p>
-                </div>
-                <div class="col text-white text-center">
+                </a>
+                <a href="#" class="col text-white text-center text-decoration-none">
                     <img src="im/atom.svg" class="pb-3">
                     <p>
                         Лабораторія
                         електромагнітних
                         полів
                     </p>
-                </div>
-                <div class="col text-white text-center">
+                </a>
+                <a href="#" class="col text-white text-center text-decoration-none">
                     <img src="im/radiology.svg" class="pb-3">
                     <p>
                         Радіологічна
                         лабораторія
                     </p>
-                </div>
+                </a>
             </div>
         </div>
 
     </section>
 
 </header>
-
+<!--Події-->
 <section class="mt-5 mb-5">
 
 
@@ -361,6 +354,7 @@
 
     </div>
 </section>
+<!--accardeon-->
 <section class="mb-5">
     <div class="container">
         <h3 class="text-center mt-5">
@@ -511,6 +505,7 @@
     </div>
 
 </section>
+<!--Інтерактивна карта-->
 <section>
     <h3 class="text-center mt-5 mb-5">
         Інтерактивна карта
@@ -518,23 +513,27 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="water-com">Вода
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="water-com">Вода
                     комунальних водопроводів
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="water-vid">Вода
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="water-vid">Вода
                     відомчих водопроводів
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="water-sіl">Вода
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="water-sіl">Вода
                     сільських водопроводів
                 </button>
             </div>
 
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="water-col">Вода
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="water-col">Вода
                     колодязів
                 </button>
             </div>
@@ -544,35 +543,43 @@
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="radio">Радіологічний
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="radio">
+                    Радіологічний
                     моніторинг
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="water-poverh">Вода
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="water-poverh">Вода
                     поверхневих водойм
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="atmos-pov">Атмосферне
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="atmos-pov">Атмосферне
                     повітря
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="acust">Акустичне
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="acust">
+                    Акустичне
                     забруднення
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="grunt">Грунт</button>
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="grunt">
+                    Грунт
+                </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="epidem-sut">
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="epidem-sut">
                     Епідемічна ситуація
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="button btn text-white map-change-button w-100 mb-4" data-map-id="prurod-dzher">
+                <button type="button" class="button btn text-white map-change-button w-100 mb-4"
+                        data-map-id="prurod-dzher">
                     Природні джерела
                 </button>
             </div>
@@ -647,19 +654,17 @@
         <div class="row">
             <!--logos-->
             <div class="col-md-4">
-            <div class="col-lg-2 mb-4 pb-md-2 justify-content-start align-self-center">
-                <div class="location d-flex flex-column align-items-start">
-                    <img src="im/logo_s.svg" alt="" width="185" height="110">
-                </div>
-            </div>
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <img src="im/logo_s.svg" alt="" width="185" height="110">
+                    </div>
 
-            <div class="col-lg-2 mb-4 mb-md-0 justify-content-start align-self-center">
-                <div class="location d-flex flex-column align-items-start">
-                    <img src="im/gerb.svg" alt="" width="140" height="170">
+                    <div class="col-lg-6 align-self-center">
+                        <img src="im/gerb.svg" alt="" width="140" height="170">
+                    </div>
                 </div>
             </div>
-            </div>
-<!--Phone-->
+            <!--Phone-->
             <div class="col-lg-2 col-md-3">
                 <div class="mb-4">
                     <div class="footer-text">Телефон гарячої лінії</div>
@@ -688,12 +693,12 @@
                     <div class="mt-2">
                         <a href="#" class="footer-links text-decoration-none">Облдержадміністрація</a>
                     </div>
-                    <div class="mt-3">
-                        <div class="footer-text">Вакансії</div>
+                    <div class="mt-2">
+                        <a href="#" class="footer-links text-decoration-none">Вакансії</a>
                     </div>
                 </div>
             </div>
-<!--Location-->
+            <!--Location-->
             <div class="col-lg-3 col-md-2">
                 <div class="d-inline-flex flex-column">
                     <div>
@@ -713,11 +718,13 @@
             </div>
 
         </div>
-
+    </div>
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="map-changer.js"></script>
