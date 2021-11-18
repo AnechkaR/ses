@@ -421,6 +421,8 @@ label {
 
 
 
+
+
 .map-information a {
     font-family: 'Open Sans', sans-serif;
     color: #ffd973;
@@ -430,13 +432,12 @@ label {
     color: #ffff73;
 }
 
-.contact {
+.contact-card {
     background-color: #3B80C0;
-    min-width: 692px;
+    min-width: 20vw;
     max-height: 600px;
     position: relative;
     float: right;
-    border-radius: 0;
 }
 
 .map-text {
@@ -448,4 +449,11 @@ label {
 
 .contact-information {
     margin: 121px 0px 121px 50px;
+}
+
+.contact-card {
+    padding: 0px;
+}
+.map-location {
+    padding: 0px;
 }
